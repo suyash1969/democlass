@@ -1,0 +1,38 @@
+public class ContainershipDemo {
+
+  public static void main(String[] args) {
+    Laptop obj = new Laptop();
+    obj.p1.name= "intel";
+    obj.p1.price = 5000;
+    obj.p1.ram= 2;
+    obj.display();
+  }
+}
+class Processor
+{
+    int price;
+    String name;
+    int ram;
+}
+class Laptop
+{
+    int weight;
+    String cname;
+    Processor p1;  // creating processor class object inside Laptop class
+    Laptop()
+    {
+            weight = 10;
+            cname = "abc";
+            p1 = new Processor();
+    }  
+    public void display()
+    {
+      System.out.println(weight);
+      System.out.println(cname);
+      System.out.println(p1.price);
+      System.out.println(p1.name);
+      System.out.println(p1.ram);
+    }
+        
+    
+}
